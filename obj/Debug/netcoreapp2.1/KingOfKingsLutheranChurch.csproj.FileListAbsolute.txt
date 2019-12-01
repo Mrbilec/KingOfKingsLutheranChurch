@@ -1,0 +1,3 @@
+C:\Users\Conner\source\repos\KingOfKingsLutheranChurch\obj\Debug\netcoreapp2.1\KingOfKingsLutheranChurch.csprojAssemblyReference.cache
+C:\Users\Conner\source\repos\KingOfKingsLutheranChurch\obj\Debug\netcoreapp2.1\KingOfKingsLutheranChurch.AssemblyInfoInputs.cache
+C:\Users\Conner\source\repos\KingOfKingsLutheranChurch\obj\Debug\netcoreapp2.1\KingOfKingsLutheranChurch.AssemblyInfo.cs

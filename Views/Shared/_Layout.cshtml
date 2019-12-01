@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KingOfKingsLutheranChurch</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Shared/Layout.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav id="mainNavbar" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3 fixed-top">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">King Of Kings Lutheran Church</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                At King of Kings
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="AtKingOfKings" asp-action="WhatWeBelieve">What We Believe</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="AtKingOfKings" asp-action="WorshipService">Worship Service</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="AtKingOfKings" asp-action="HolyCommunion">Holy Communion</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                News and Events
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="NewsAndEvents" asp-action="News">News</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="NewsAndEvents" asp-action="PorchLightGroup">Porch Light Group</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="NewsAndEvents" asp-action="CalendarOfEvents">Calendar Of Events</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Resources
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="Resources" asp-action="DevotionalThought">Devotional Thought</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Resources" asp-action="GriefSupport">Grief Support</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Resources" asp-action="Links">Links</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2019 - King Of Kings Lutheran Church
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/Shared/Layout.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

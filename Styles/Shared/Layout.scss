@@ -1,0 +1,36 @@
+﻿.dropdown {
+    width: auto;
+    
+    .dropdown-menu {
+        width: auto;
+        border: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        max-height: 0;
+        
+        .dropdown-item {
+            padding: 8px;
+        }
+    }
+}
+
+.dropdown:hover {
+    background-color: cornflowerblue;
+
+    .dropdown-menu {
+        max-height: 300px;
+        transition: 300ms ease-in;
+
+        .dropdown-item:hover {
+            background-color: cornflowerblue;
+            color: white;
+        }
+    }
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;    
+}
